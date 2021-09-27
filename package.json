@@ -1,0 +1,25 @@
+{
+  "name": "f8_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "prettier": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'src/**/*.{js, json, scss}'",
+    "scss": "sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "mongoose": "^6.0.7"
+  },
+  "devDependencies": {
+    "lint-staged": "^11.1.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1"
+  }
+}
